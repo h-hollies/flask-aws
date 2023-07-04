@@ -1,0 +1,92 @@
+{% extends "layout.html" %}
+
+{% block main %}
+        <main class="index-main" style="padding: 2.25rem 0rem 3.2rem 0rem">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-3" style="text-align: center; padding: 2.25rem 0rem 0rem 0rem;"><img src="static/homepage-images/html-css-logo.png" alt="html" width="100" height="100" style="margin: 0rem; opacity: 1;"></div>
+                    <div class="col-lg-3 col-sm-3" style="text-align: center; padding: 2.25rem 0rem 0rem 0rem;"><img src="static/homepage-images/sqlite-logo.png" alt="sqlite" width="100" height="100" style="margin: 0rem; opacity: 1;"></div>
+                    <div class="col-lg-3 col-sm-3" style="text-align: center; padding: 2.25rem 0rem 0rem 0rem;"><img src="static/homepage-images/python-logo.png" alt="python" width="100" height="100" style="margin: 0rem; opacity: 1;"></div>
+                    <div class="col-lg-3 col-sm-3" style="text-align: center; padding: 2.25rem 0rem 0rem 0rem;"><img src="static/homepage-images/java-logo.png" alt="java" width="100" height="100" style="margin: 0rem; opacity: 1;"></div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row" style="font-family: Georgia, serif;">
+                    <div class="col-lg-3 col-sm-1"></div>
+                    <div class="col-lg-6 col-sm-10">
+                        <div style="padding: 6.25rem 0rem;"></div>
+                        <div style="text-align: center; padding: 0rem 0rem 0rem 0rem; background-color: #ffffff; border-radius: 1.5rem;">
+                            <img src="static/homepage-images/vs-code-logo.png" alt="vs-code" width="200" height="200" style="margin: -18.75rem; border-radius: 6.25rem; opacity: 1;">
+                            <div style="margin: 6.25rem 0rem"></div>
+                            <div class="container-fluid">
+                                <div class="row padding-100-top-bottom">
+                                    <div class="col-sm-2"></div>
+                                    <div class="col-sm-8">
+                                        <p>
+                                            I started my programming journey in March 2023 with basic
+                                            computer knowledge and zero programming knowledge. Over the
+                                            past few months i have come from being able to do basic
+                                            spreadsheets and internet browsing, to making this HTML page
+                                            today!
+                                            <a href="https://home.edx.org/" style="color: blue;">CS50X</a>
+                                            has taken me from creating a basic scratch programme that i called
+                                            <a href="https://scratch.mit.edu/projects/824056025/" style="color: blue;">Snappy Shark</a>,
+                                            to learing programming in C, Python, Javascript and using Sqlite3 databases.
+                                            In between my CS50 lectures i have been teaching myself
+                                            Bash Scripting, setting up Web Servers using AWS and viutual
+                                            machines using VirtualBox by Oracle to try and expand my
+                                            knowledge on computers.
+                                        </p>
+                                        <p>
+                                            I think my favorite language to programme in would be
+                                            C, maybe this is because the syntax is imprinted in my
+                                            brain from weeks of labs and psets at the begining
+                                            of this course. I like the way Python automatically handles
+                                            memory allocation, maybe with a bit more practice using
+                                            Python i will prefer this due to it&#8217;s user friendly syntax!
+                                        </p>
+                                        <hr class="horizontal-line">
+                                        <p>I am asking people that visit my site which is thier favorite
+                                            language to programme in. Feel free to add yours to the list:
+                                        </p>
+                                        <form action="/coding" method="post">
+                                            <select name="language">
+                                                <option disabled selected>Language</option>
+                                                {% for language in languages %}
+                                                    <option value="{{ language }}">{{ language }}</option>
+                                                {% endfor %}
+                                            </select>
+                                            <button type="submit">Submit</button>
+                                        </form>
+                                        <p style="padding: 1rem 0rem 0rem 0rem"><b><span style="color:#c91224">def&#160;</span>language_count&#40;&#41;:</b></p>
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <table>
+                                                        <tr>
+                                                            <td>C:</td>
+                                                            <td>{{ c }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Python:</td>
+                                                            <td>{{ python }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>JavaScript:</td>
+                                                            <td>{{ java }}</td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-1"></div>
+                </div>
+            </div>
+        </main>
+{% endblock %}

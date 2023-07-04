@@ -1,0 +1,288 @@
+body {
+    background-image: white;
+    color: #212529;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+footer {
+    background-image: url('homepage-images/black-lined-background.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #277bcf;
+    width: 100%;
+    margin: 0;
+    height: 5rem;
+}
+
+img {
+    opacity: 0.5;
+    border-radius: 2%;
+    filter: grayscale(0%);
+
+}
+
+nav {
+    display: inline-block;
+    width: 5rem;
+    text-align: center;
+    text-align: center;
+    padding: 0;
+    font-size: 0.8rem;
+}
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+}
+
+button, input[type="submit"] {
+    background-color: #696b6a;
+    border: 1px solid #000000;
+    border-radius: 0.25rem;
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0.2rem 1rem;
+    text-align: right;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    vertical-align: center;
+}
+
+table {
+    background-color: transparent;
+    margin-bottom: 1rem;
+    width: 100%;
+    border: 2px solid black;
+}
+
+table td {
+    padding: 0.75rem;
+    vertical-align: middle;
+    border: 2px dotted black;
+}
+
+tbody tr:nth-of-type(odd) {
+    background-color: #c8cce0;
+}
+
+/*-------------------CLASSES----------------------*/
+
+.img-logo {
+    width: 4rem;
+    height: 4rem;
+    opacity: 0.5;
+    border-radius: 2%;
+    filter: grayscale(0%);
+}
+
+/*--------HEADER---------*/
+.header {
+    background-image: url('homepage-images/light-grey-brushed-background.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-color: #277bcf;
+    margin: 0rem;
+    padding: 2rem 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+/*--------INDEX----------*/
+.index-main {
+    background-image: url('homepage-images/black-lined-background.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #277bcf;
+    margin-bottom: 0rem;
+    padding: 1.5rem 0rem 0rem 0rem;
+    width: 100%;
+    text-align: left;
+}
+
+/*--------ABOUT----------*/
+.about {
+    background-color: #ffffff;
+    margin: 15rem 30rem 30rem 3rem;
+}
+
+/*-----NAV-PADDING-------*/
+.nav-mid {
+    padding: 1.75rem 0rem 0rem 0rem;
+}
+
+/*----FOOTER-LINE--------*/
+.horizontal_line {
+    background-color: #ffffff;
+    height: 0.25rem;
+    line-height: 0.25rem;
+    margin: 0rem 0rem 0rem 0rem;
+}
+
+.footer-pad {
+    margin: 1rem 0rem;
+   }
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.name {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0;
+    font-weight: 700;
+}
+
+.column-align {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.section {
+    padding: 0.5rem 2rem 1rem 2rem;
+}
+
+.section:hover {
+    background-color: #f5f5f5;
+    transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+.space {
+    margin: 0;
+    padding: 0;
+    height: 4rem;
+}
+
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+/*-------------------H--CLASSES----------------------*/
+
+.h1 {
+    text-align: center;
+    font-family: 'Courier New', monospace;
+    color: white;
+    font-size: 1rem;
+}
+
+/*-------------------P--CLASSES---------------------*/
+
+.p1 {
+    text-align: center;
+    margin-top: -0.6rem;
+    margin-bottom: 0.2rem;
+    padding: 0rem 0rem 0rem 0rem;
+    font-size: 1.3rem;
+    font-family: 'Brush Script MT', cursive;
+}
+
+.p2 {
+    font-family: 'Courier New', monospace;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.p3 {
+    font-family: 'Courier New', monospace;
+    color: white;
+    font: bold;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: -0.6rem;
+    margin-bottom: 0.1rem;
+}
+
+.p4 {
+    font-family: 'Courier New', monospace;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: -0.8em;
+    padding: 0rem 0rem 0rem 0rem;
+}
+
+/*------------------LINKS----------------------*/
+
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    vertical-align: center;
+}
+
+a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    vertical-align: center;
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+    vertical-align: center;
+}
+
+a:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+    vertical-align: center;
+}
+
+/*----------------PADDING-------------------------*/
+
+.padding-index-bio {
+    padding: 5rem 1.2rem;
+}
+
+.padding-img-bio {
+    padding: 2.25rem 0rem;
+}
+
+.padding-sides {
+    padding: 1rem 1rem 1rem 1rem
+}
+
+.padding-200 {
+    padding: 10rem 3rem 10rem 12rem;
+}
+
+.padding-top-bottom {
+    padding: 0.1rem 0rem;
+}
+
+.padding-top-bottom {
+    padding: 7.8rem 0rem;
+}
+
+.padding-70-top {
+    padding: 4.3rem 0rem 0rem 0rem;
+}
+
+/*-----------margin-------------*/
+
+.margin-t-b {
+    margin: 2rem 0rem;
+}
+
